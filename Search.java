@@ -1,10 +1,10 @@
 import java.util.*;
 import java.lang.NullPointerException;
 
-public class Search {
+public class Search { 
 
   public static ArrayList<Tuple>[] Searching(ArrayList<Tuple> array) throws IndexOutOfBoundsException {
-    
+    System.out.println("array "+array);
     //We are getting unsorted array so here we are sorting the arrayList of tuple
     Comparator<Tuple> comparator = new Comparator<Tuple>() {
       public int compare(Tuple tupleA, Tuple tupleB) {
@@ -26,7 +26,7 @@ public class Search {
       int d1 = array.get(i + 1).a - array.get(i).a; //Difference between two consecutive tuple
       int d2 = array.get(i + 1).b - array.get(i).b; //Difference between two consecutive tuple
      
-      if (d1 == d2 || d1<k) {
+      if (d1 == d2) {
         j += d1;
       }
       else {

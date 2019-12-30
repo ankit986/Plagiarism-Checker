@@ -147,10 +147,10 @@ public class PlagiarismChecker {
           ArrayList<Tuple> indexes = Similarity.getCommonIndex(); // Taking the unsorted index(arrayList of tuple) of
                                                                   // Similar string.
           ArrayList<Tuple>[] highlightingPartList = new ArrayList[2];// Taking size 2 because we have two files.
-
           try {
             highlightingPartList = Search.Searching(indexes); // Passing index to get the two arrays, one for each file
-                                                              // and each file contaning common tuple of indexes.
+            // and each file contaning common tuple of indexes.
+            // System.out.println(highlightingPartList);
           } catch (IndexOutOfBoundsException o) {
           } catch (NullPointerException p) {
           }
@@ -166,7 +166,7 @@ public class PlagiarismChecker {
           
           try {
             for (int i = 0; i < isize; ++i) {
-              System.out.println("h1  "+highlightingPartList[1].get(i).a);
+              // System.out.println("h1  "+highlightingPartList[1].get(i).a);
               highlighting1.addHighlight(highlightingPartList[1].get(i).a,
                   highlightingPartList[1].get(i).a + highlightingPartList[1].get(i).b, painter);
               highlighting2.addHighlight(highlightingPartList[0].get(i).a,
@@ -193,7 +193,7 @@ public class PlagiarismChecker {
       public void actionPerformed(ActionEvent arg0){
         fileChooserFrame.setVisible(true);
         file1=null;
-        file2=null;
+        file2=null; 
       }
     });
 
