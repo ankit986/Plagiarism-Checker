@@ -88,7 +88,7 @@ public class Similarity{
     for(int i=0; i< line.length() - k +1; ++i){//k is length of String to be mapped
       String x = line.substring(i,i+k);
       map.put(x.hashCode(),i);
-      System.out.println(x+" "+x.hashCode()+" "+i);
+     // System.out.println(x+" "+x.hashCode()+" "+i);
     }
     return map;
   }
@@ -106,15 +106,15 @@ public class Similarity{
      
     Map<Integer, Integer> shinglesA= shingles(a);
     Map<Integer, Integer> shinglesB= shingles(b);
-    System.out.println("shinglesA "+shinglesA);
-    System.out.println("shinglesB "+shinglesB);
+   // System.out.println("shinglesA "+shinglesA);
+   // System.out.println("shinglesB "+shinglesB);
 
     Set<Integer> set1= new HashSet<Integer>(shinglesA.keySet());//Set1 will contain the intersection of both the shingles.
     Set<Integer> set2= new HashSet<Integer>(shinglesA.keySet());//Set2 will contain the union of both the shingles.
     set1.retainAll(shinglesB.keySet());//retainall = intersection
     set2.addAll(shinglesB.keySet());//addall = union
-    System.out.println("set1 "+set1);
-    System.out.println("set2 "+set2);
+   // System.out.println("set1 "+set1);
+    //System.out.println("set2 "+set2);
 
     Iterator itr = set1.iterator();
     Object first = itr.next();

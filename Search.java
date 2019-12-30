@@ -4,7 +4,7 @@ import java.lang.NullPointerException;
 public class Search { 
 
   public static ArrayList<Tuple>[] Searching(ArrayList<Tuple> array) throws IndexOutOfBoundsException {
-    System.out.println("array "+array);
+    //System.out.println("array "+array);
     //We are getting unsorted array so here we are sorting the arrayList of tuple
     Comparator<Tuple> comparator = new Comparator<Tuple>() {
       public int compare(Tuple tupleA, Tuple tupleB) {
@@ -45,8 +45,8 @@ public class Search {
     ArrayList<Tuple>[] ar = new ArrayList[2];// Sorted index array
     ar[0] = outputarray1;//for file 1
     ar[1] = outputarray2;//for file 2
-    System.out.println("outputarr1  "+outputarray1);
-    System.out.println("outputarr2  "+outputarray2);
+    //System.out.println("outputarr1  "+outputarray1);
+    //System.out.println("outputarr2  "+outputarray2);
 
 
     return ar;
