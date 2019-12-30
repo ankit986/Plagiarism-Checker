@@ -4,9 +4,8 @@ Plagiarism-Checker is a GUI Based Java Desktop application which take two files 
 
 *File Selection*
 
-![Image of File Selector](https://github.com/ankit986/Plagiarism-Checker/blob/master/ScreenShots/Screenshot from 2019-12-31 01-29-42.png)
-
 ![Image of Selecting File](https://github.com/ankit986/Plagiarism-Checker/blob/master/ScreenShots/Screenshot%20from%202019-12-31%2001-38-14.png)
+
 
 *Output*
 
