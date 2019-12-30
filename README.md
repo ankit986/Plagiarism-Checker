@@ -1,1 +1,1 @@
-# Plagiarismi-Checker
+# Plagiarism-Checker
