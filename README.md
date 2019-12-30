@@ -11,3 +11,4 @@ Plagiarism-Checker is a GUI Based Java Desktop application which take two files 
 
 ![Image of Output](https://github.com/ankit986/Plagiarism-Checker/blob/master/ScreenShots/Screenshot%20from%202019-12-31%2001-29-42.png)
 
+
